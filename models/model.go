@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	// ORM全局句柄，他的作用域是整个包
+	// global ORM handle, it effect the package
 	dbHandle *gorm.DB
 )
 

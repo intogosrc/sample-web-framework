@@ -11,7 +11,7 @@ import (
 )
 
 type ApiController struct {
-	BaseController // 组合模式应用
+	BaseController // compose base BaseController, so we can use basic functions (JsonSuccess...) of BaseController
 }
 
 func (ctrl *ApiController) Test(c *gin.Context) {

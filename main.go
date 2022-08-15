@@ -10,7 +10,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
-// main 函数是整个程序的入口，程序将从这里执行
+// application begins at here
 func main() {
 	var err error
 
@@ -19,19 +19,19 @@ func main() {
 		return
 	}
 
-	// 解析配置文件
+	// parse config file
 	err = conf.InitConfig(os.Args[1])
 	if err != nil {
 		panic(err)
 	}
 
-	// 首先初始化 ORM 句柄，连接到数据库
+	// init ORM handle
 	err = models.InitOrm()
 	if err != nil {
 		panic(err)
 	}
 
-	// 启动 WEB 服务
+	// start WEB server
 	err = controllers.StartServer()
 	if err != nil {
 		panic(err)

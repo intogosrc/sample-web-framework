@@ -1,20 +1,20 @@
-### 基础信息
+### basic
 
 host  
 http://127.0.0.1:3000  
 
 
-### 测试
+### test apis
 
 URI: /auth/test
 
-参数：
+parameters:
 
 | name | type | info |
 | ---- | ---- | ---- |
-| auth_token | string | 验证信息 |
+| auth_token | string | use to check auth |
 
-返回值示例：
+example of response:
 
 ```json
 {
