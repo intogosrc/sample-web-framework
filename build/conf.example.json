@@ -1,0 +1,14 @@
+{
+    "http": {
+        "host": "127.0.0.1",
+        "port": 3000
+    },
+    "db":{
+        "host": "127.0.0.1",
+        "user": "root",
+        "password": "",
+        "name": "test",
+        "port": 3306
+    },
+    "auth_token":"1234567890"
+}
