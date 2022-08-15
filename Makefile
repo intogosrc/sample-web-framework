@@ -1,8 +1,8 @@
 all:
-	go build -o ./build/FrameworkTest .
+	go build -o ./build/FrameworkTest.exe .
 
 run:
-	./build/FrameworkTest ./build/conf.json
+	./build/FrameworkTest.exe ./build/conf.json
 
 clean:
-	rm -rf ./build/FrameworkTest
+	rm -rf ./build/FrameworkTest.exe
